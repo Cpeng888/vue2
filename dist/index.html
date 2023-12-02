@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vue</title>
+</head>
+
+<body>
+    <script src="./vue.js"></script>
+    <script>
+        // 数据响应式变化 数据变化了我可以监控到数据的变化 数据的取值和更改值要监控到
+        const vm = new Vue({
+            data() {
+                return {
+                    name: 'cp',
+                    age: '20',
+                    detail:{
+                        hight:180,
+                        weight:70
+                    },
+                    hobby:["唱","跳","rap","篮球"]
+                }
+            }
+        })
+        // console.log(vm.hobby.push('我是ikun'))
+        // console.log(vm.hobby)
+        // vm.name = 'niuma'
+        // 数组其实也是可以通过defineproperty方法进行代理，但是假如数组很多，一万个，就会非常浪费性能，而且在工作中，我们并不会通过索引进行操作数组，都是通过api
+    </script>
+</body>
+
+</html>
